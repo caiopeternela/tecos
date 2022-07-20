@@ -14,10 +14,11 @@
         <img src="{% static 'img/scissors-removebg-preview.png' %}" alt="Tesoura">
     </div>
     <h1>Encurtador de URL</h1>
-    <form method='post' action="/result/">
+    <form method="post">
         {% csrf_token %}
-        <input type="text" class="input" size="50px" name="url" placeholder="Cole o seu link aqui">
+        <input type="text" class="input" size="50px" name="url">
         <input type="submit" class="button" value="Encurtar"></input>
+        <a href="{{ short_url }}" target="_blank"><h2>{{ short_url_link }}</h2></a>
     </form>
 </body>
 </html>
