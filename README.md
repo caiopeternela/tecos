@@ -1,1 +1,1 @@
-# [Encurtador de URL](https://projeto-encurtador-de-url.herokuapp.com/)
+# [Tecos - Encurtador de URL](https://projeto-encurtador-de-url.herokuapp.com/)
