@@ -7,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <title>Tecos - Encurtador de URL</title>
+    <title>Tecos</title>
 </head>
 <body>
     <div class="img">
         <img src="{% static 'img/scissors-removebg-preview.png' %}" alt="Tesoura">
     </div>
-    <h1>Tecos - Encurtador de URL</h1>
+    <h1>Tecos</h1>
     <form method="post">
         {% csrf_token %}
         <input type="text" class="input" size="50px" name="url">
-        <input type="submit" class="button" value="Encurtar"></input>
+        <input type="submit" class="button" value="Encurtar URL"></input>
         <a href="{{ short_url }}" target="_blank"><h2>{{ short_url_link }}</h2></a>
     </form>
 </body>
